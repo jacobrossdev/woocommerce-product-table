@@ -1,0 +1,33 @@
+	.product-table-row {
+		display: flex;
+		flex-direction: row;
+		align-items: stretch;
+		justify-content: stretch;
+	}
+
+	.product-table-column thead th:first-child {
+	    width: 65%;
+	}
+	.product-table-column {
+		padding: 0 15px;
+	}
+
+	.product-table-column {
+		flex-grow: 1;		
+    min-width: 530px;
+		max-width: 530px;
+	}
+
+	#table-totals {
+		flex-grow: 1;
+		min-width: 300px;
+		max-width: 300px;
+	}
+
+	thead.brand th {
+		padding: 4px 8px;
+	}
+	thead.brand {
+    font-size: 0.94em;
+    background-color: rgba(150, 211, 233, 0.5);
+	}
