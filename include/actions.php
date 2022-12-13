@@ -96,6 +96,12 @@ function woo_product_table_func( $atts = array(), $content = '' ) {
 
 	global $woocommerce;
 
+	if( is_null($woocommerce) )
+		return;
+
+	if( is_null($woocommerce->cart) )
+		return;
+
 	$cart_contents = $woocommerce->cart->get_cart_contents();
 
 	$totals = $woocommerce->cart->get_totals();
